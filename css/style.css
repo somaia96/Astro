@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+/* Header Section */
+section.header{
+    background-color: black;
+    height: 100vh;
+    background-image: url("../image/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.rotate{
+    animation: earthMoon 20s  infinite linear;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.earth{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.earth img{
+    width: 100%;
+}
+.moon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% + 220px);
+    top:  calc(50% + 150px);
+    transform: translate(-50%,-50%);
+    animation: earthMoon 4s  infinite linear;
+}
+.moon img{
+    width: 100%;
+}
+/* animation earh & moon rotate */
+@keyframes earthMoon {
+    to{
+    transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+/* animation earh & moon rotate */
+
+/* LogIn Modal */
+.form-class{
+    background-color: #f6f6f6;
+}
+/* LogIn Modal */
+/* Header Section */
+
+/* Astronaut Section */
+.astronauts{
+    overflow: hidden;
+}
+.card{
+    padding: 0 !important;
+    border-radius: 0;
+    margin: 0 !important;
+    text-align: center;
+    filter: blur(1px);
+    border: none;
+}
+.card:hover{
+    filter: none;
+    overflow: hidden;
+}
+.card:hover img{
+    transform: scale3d(1.7, 1.1, 1.5) rotate(-15deg);
+}
+
+.card div {
+    max-height: 250px;
+}
+.card img{
+    height: 130%;
+    width: auto;
+}
+/* Astronaut Section */
