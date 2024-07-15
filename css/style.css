@@ -93,11 +93,16 @@ section.header{
     height: 130%;
     width: auto;
 }
+@media (max-width:767px) {
+.card:hover img{
+    filter: brightness(0.5);
+}
 .card:hover .card-body{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
 
+}
 }
 /* Astronaut Section */
